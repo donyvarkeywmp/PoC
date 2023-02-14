@@ -1,22 +1,24 @@
-import logo from './logo.svg';
+import Apaexlinecolumn from './ApexLineChart';
 import './App.css';
+import FileUpload from './FileUpload';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <FileUpload />
+        <div style={{ marginTop: 20 }}>
+          <div className='card'>
+            <div className='card-header'>
+              Export Chart Data
+            </div>
+            <div className='card-body'>
+              <Apaexlinecolumn />
+            </div>
+          </div>
+
+        </div>
       </header>
     </div>
   );
